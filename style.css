@@ -57,3 +57,20 @@ select:focus {
     margin: 100px auto;
     position: absolute;
 }
+
+/* .comp {
+    font-size: 20pt;
+    font-family: sans-serif;
+    padding: 500px;
+} */
+
+p {
+    font-size: 50px;
+    height: 200px;
+    width: 875px;
+    /* border: 5px solid black; */
+    position: relative;
+    padding-top: 50px;
+    padding-left: 400px;
+    
+}
