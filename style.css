@@ -45,12 +45,13 @@ select:focus {
 } 
 
 .outputSize {
+    font-size: 15pt;
     width: 150px;
     height: 50px;
 }
 
 
-.answer {
+#answer {
     background: #ccccdd;
     width: 870px;
     height: 200px;
