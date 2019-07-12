@@ -48,3 +48,12 @@ select:focus {
     width: 150px;
     height: 50px;
 }
+
+
+.answer {
+    background: #ccccdd;
+    width: 870px;
+    height: 200px;
+    margin: 100px auto;
+    position: absolute;
+}
