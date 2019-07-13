@@ -13,15 +13,14 @@
            
                 <input type="number" class="inputSize" id="First1" placeholder="Number here">
            
-            <select name="operators" id="list" >
+            <select id="list" >
                 <option value="addition">Addition </option>
                 <option value="substraction">Substraction </option>
             </select>
            
                 <input type="number" class="inputSize" id="Second2" placeholder="Number here">
            
-            <!-- <input type="submit" class="outputSize" value="Equals" onclick="ValueAnswer();"> -->
-            <button id="equals" class="outputSize">Equals</button>
+            <button id="equals" onclick="calc();" class="outputSize">Equals</button>
         </div>
 
         <div id="answer">
@@ -37,3 +36,64 @@
     <script src="app.js"></script>
 </body>
 </html>
+
+<!-- 
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <title>javascript: calculate two numbers</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            
+            function calc()
+            {
+                var n1 = parseFloat(document.getElementById('n1').value);
+                var n2 = parseFloat(document.getElementById('n2').value);
+                
+                var oper = document.getElementById('operators').value;
+                
+                if(oper === '+')
+                {
+                    document.getElementById('result').value = n1+n2;
+                }
+                
+                if(oper === '-')
+                {
+                    document.getElementById('result').value = n1-n2;
+                }
+                
+                if(oper === '/')
+                {
+                    document.getElementById('result').value = n1/n2;
+                }
+                
+                if(oper === 'X')
+                {
+                    document.getElementById('result').value = n1*n2;
+                }
+            }
+            
+        </script>
+        
+    </head>
+    <body>
+        
+        <input type="text" id="n1"/><br/><br/>
+        <input type="text" id="n2"/><br/><br/>
+        
+        <select id="operators">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+            <option value="X">X</option>
+        </select>
+        
+        <button onclick="calc();">=</button>
+        <input type="text" id="result"/>
+        
+    </body>
+</html> -->

@@ -3,21 +3,92 @@
 //to do is taking the number in both the fields 
 
 
+// function calc () {
+    
+//     var num1 = document.getElementById('First1').value;
+//     var num2 = document.getElementById("Second2").value;
 
-const num1 = document.getElementById('First1');
-const num2 = document.getElementById("Second2");
+//     const sign = document.getElementById('list').value;
 
-num1.addEventListener('input', function() {
-    console.log(num1.value);
-    const numTemp = num1.value;
+//     if (sign == "addition" ) {
+//         var x = num1 + num2;
+//         document.getElementById("Comp").innerHTML = x ;
 
-});
+//         console.log("hello world");
+//     }
+//     else  {
+//         let x = num1 - num2;
+//         document.getElementById("Comp").innerHTML = x;
+//     };
 
-num2.addEventListener('input', function() {
-    console.log(num2.value);
-    const numTemp = num2.value;
+// };
 
-});
+
+
+ 
+function calc()
+{
+    // var n1 = parseFloat(document.querySelector('first1').value);
+    var n1 = parseFloat(document.getElementById('first1').value);
+    var n2 = parseFloat(document.getElementById('Second2').value);
+    
+    var oper = document.getElementById('list').value;
+    
+    if(oper === 'addition')
+    {
+        document.getElementById('Comp').value = n1+n2;
+    }
+    
+    if(oper === '-')
+    {
+        document.getElementById('Comp').value = n1-n2;
+    }
+    
+    if(oper === '/')
+    {
+        document.getElementById('result').value = n1/n2;
+    }
+    
+    if(oper === 'X')
+    {
+        document.getElementById('result').value = n1*n2;
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// num1.addEventListener('input', function() {
+//     console.log(num1.value);
+//     const numTemp = num1.value;
+
+// });
+
+// num2.addEventListener('input', function() {
+//     console.log(num2.value);
+//     const numTemp = num2.value;
+
+// });
 
 
 
@@ -73,17 +144,17 @@ num2.addEventListener('input', function() {
 
 // document.getElementById('equals').addEventListener('click', show_selected);
 
-function showAns () { 
-        var x = document.querySelector('select').value ;
+// function showAns () { 
+//         var x = document.querySelector('select').value ;
         
-        if (x = addition) {
-            console.log("hello")
-            document.getElementById('answer').innerHTML = value;
-        }
-        else {
-            console.log("no hello")
-        }
+//         if (x = addition) {
+//             console.log("hello")
+//             document.getElementById('answer').innerHTML = value;
+//         }
+//         else {
+//             console.log("no hello")
+//         }
         
-    };
+//     };
 
-    document.getElementById('equals').addEventListener('click', showAns);
+//     document.getElementById('equals').addEventListener('click', showAns);
