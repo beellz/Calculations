@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form class="main">
+    <div class="main">
         <div class="element">
            
                 <input type="number" class="inputSize" id="First1" placeholder="Number here">
@@ -16,6 +16,9 @@
             <select id="list" >
                 <option value="addition">Addition </option>
                 <option value="substraction">Substraction </option>
+                <option value="division" >Division</option>
+                <option value="multiplycation" >Multiply</option>
+                
             </select>
            
                 <input type="number" class="inputSize" id="Second2" placeholder="Number here">
@@ -24,7 +27,8 @@
         </div>
 
         <div id="answer">
-            <p id="Comp" >500</p>
+            <p class="Anstype"> Answer Here</p>
+            <p id="Comp" ></p>
             
         </div>
 
@@ -32,7 +36,7 @@
 
 
 
-    </form>    
+    </div>    
     <script src="app.js"></script>
 </body>
 </html>

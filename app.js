@@ -29,29 +29,30 @@
 function calc()
 {
     // var n1 = parseFloat(document.querySelector('first1').value);
-    var n1 = parseFloat(document.getElementById('first1').value);
+    var n1 = parseFloat(document.getElementById('First1').value);
     var n2 = parseFloat(document.getElementById('Second2').value);
     
     var oper = document.getElementById('list').value;
     
     if(oper === 'addition')
     {
-        document.getElementById('Comp').value = n1+n2;
+
+        document.getElementById('Comp').innerHTML = n1+n2;
+    };
+    
+    if(oper === 'substraction')
+    {
+        document.getElementById('Comp').innerHTML = n1-n2;
     }
     
-    if(oper === '-')
+    if(oper === 'division')
     {
-        document.getElementById('Comp').value = n1-n2;
+        document.getElementById('Comp').innerHTML = n1/n2;
     }
     
-    if(oper === '/')
+    if(oper === 'multiplycation')
     {
-        document.getElementById('result').value = n1/n2;
-    }
-    
-    if(oper === 'X')
-    {
-        document.getElementById('result').value = n1*n2;
+        document.getElementById('Comp').innerHTML = n1*n2;
     }
 };
 
@@ -158,3 +159,11 @@ function calc()
 //     };
 
 //     document.getElementById('equals').addEventListener('click', showAns);
+
+// fucntion calc() {
+
+//     const n1 = document.getElementById("First1").value
+
+
+
+// }
